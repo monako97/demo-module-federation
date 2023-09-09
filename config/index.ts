@@ -19,7 +19,10 @@ const conf: Partial<ConfigType> = {
       library: { type: 'var', name: 'demo_remote_lib' },
       exposes: [
         'react',
+        'react/jsx-runtime',
+        'react/jsx-dev-runtime',
         'react-dom',
+        'react-dom/client',
         'react-router',
         'react-router-dom',
         {
