@@ -1,0 +1,16 @@
+extends:
+  - neko
+  - plugin:react/recommended
+  - plugin:react-hooks/recommended
+plugins:
+  - react
+  - react-hooks
+rules:
+  import/no-unresolved:
+    - 2
+    - ignore:
+      - \?raw$
+      - ^@/
+      - ^@app
+      - ^@pkg
+      - ^demo-module-federation

@@ -1,0 +1,17 @@
+{
+    "extends": "@moneko/react/base",
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "site/*"
+            ],
+            "@pkg/*": [
+                "components/*"
+            ],
+            "demo-module-federation/*": [
+                "components/*"
+            ]
+        }
+    }
+}
