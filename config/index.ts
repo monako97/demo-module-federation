@@ -20,7 +20,6 @@ const conf: Partial<ConfigType> = {
       exposes: [
         'react',
         'react/jsx-runtime',
-        'react/jsx-dev-runtime',
         'react-dom',
         'react-dom/client',
         'react-router',

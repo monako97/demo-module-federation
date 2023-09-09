@@ -52,7 +52,15 @@ const conf: Partial<ConfigType> = {
           // moduleFederation 的地址
           host: 'https://monako97.github.io/demo-module-federation',
           // 从 moduleFederation 载入的依赖
-          library: ['react', 'react-dom', 'react-router', 'react-router-dom', 'dayjs'],
+          library: [
+            'react',
+            'react/jsx-runtime',
+            'react-dom',
+            'react-dom/client',
+            'react-router',
+            'react-router-dom',
+            'dayjs',
+          ],
         },
       ],
     },
