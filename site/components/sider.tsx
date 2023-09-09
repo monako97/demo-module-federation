@@ -89,7 +89,7 @@ function Sider({ scheme }: { scheme?: keyof typeof ColorScheme }) {
   useEffect(() => {
     if (themeSwitch.current) {
       themeSwitch.current.items = themes;
-      themeSwitch.current?.addEventListener('change', (e: CustomEvent) => {
+      themeSwitch.current?.addEventListener?.('change', (e: CustomEvent) => {
         theme.setScheme(e.detail[0]);
       });
     }
@@ -109,7 +109,7 @@ function Sider({ scheme }: { scheme?: keyof typeof ColorScheme }) {
           />
         </Link>
         <hgroup className="site-title">
-          <h1 data-truncated>{app.name.replace(/-/g, ' ').toLocaleUpperCase()}</h1>
+          <h1 data-truncated>REMOTE LIB</h1>
           <i>{kv[active]?.subtitle || app.description}</i>
         </hgroup>
         <n-dropdown

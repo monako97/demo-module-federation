@@ -2,40 +2,36 @@
 
 > 这里教你如何制作并发布一个moduleFederation应用, 使用组件库应用类型只是为了方便生成文档
 
-## 安装依赖
-
-```shell
-npm install
-# or
-yarn install
-```
-
 ## 启动项目
 
 ```shell
-npm start
-# or
 yarn start
 ```
 
 ## 打包项目(同时打包文档和moduleFederation)
 
 ```shell
-npm run build
-# or
 yarn build
 ```
 
-## 打包项目`使用自定义配置`
-
 > 在打包其它有特殊配置的 bundle 时, 可以通过命令行参数来加载额外的配置文件;
 
-例如: 只打包 moduleFederation, 使用 **config/index.ts** 与 **config/only-mf.ts** 合并后的配置进行编译.
+## 打包发布到 github pages 上的资源(文档、moduleFederation)
 
 ```shell
-npm run build --config=only-mf
-# or
+yarn build config=github
+```
+
+## 只打包 moduleFederation
+
+```shell
 yarn build config=only-mf
+```
+
+## 打包 umd
+
+```shell
+yarn build config=umd
 ```
 
 ## 发布后在其它应用中如何接入?
@@ -51,9 +47,11 @@ const conf: Partial<ConfigType> = {
       // 接入 moduleFederation
       remotes: [
         {
+          // moduleFederation的名称
           name: 'demo_remote_lib',
-          // moduleFederation 发布的地址
-          host: '//monako97.github.io/demo-module-federation',
+          // moduleFederation 的地址
+          host: 'https://monako97.github.io/demo-module-federation',
+          // 从 moduleFederation 载入的依赖
           library: ['react', 'react-dom', 'react-router', 'react-router-dom', 'dayjs'],
         },
       ],
@@ -67,9 +65,12 @@ export default conf;
 ## 使用
 
 ```jsx
+// 从 moduleFederation 加载的 React
 import React, { type FC } from 'react';
-import Card from 'demo_remote_lib/Card';
+// 从 moduleFederation 加载的 dayjs
 import dayjs from 'dayjs';
+// 从 moduleFederation 加载的 Card
+import Card from 'demo_remote_lib/Card';
 
 console.log(dayjs());
 const Root: FC = () => {

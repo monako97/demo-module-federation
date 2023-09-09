@@ -9,7 +9,7 @@ const conf: Partial<ConfigType> = {
     path: path.resolve(process.cwd(), './lib'),
     filename: 'index.js',
     library: {
-      name: 'demo-module-federation',
+      name: 'demo-remote-lib',
       type: 'umd',
       umdNamedDefine: true,
     },

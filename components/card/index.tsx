@@ -12,30 +12,8 @@ export interface CardProps {
   title?: ReactNode;
   /** 内容 */
   children?: ReactNode;
-  /** 尺寸
-   * @default 'normal'
-   */
-  size?: keyof typeof Size;
-  /** 类型
-   * @default 'line'
-   */
-  type?: keyof typeof Type;
 }
 
-/** 对于字面量建议使用枚举 */
-enum Size {
-  /** 小 */
-  small,
-  /** 默认 */
-  normal,
-}
-/** 类型 */
-enum Type {
-  /** 线 */
-  line = 'line',
-  /** 卡片 */
-  card = 'card',
-}
 function Card(props: CardProps) {
   return (
     <div>
