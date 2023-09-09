@@ -7,7 +7,7 @@ const conf: Partial<ConfigType> = {
     nojekyll: true,
   },
   basename: '/demo-module-federation/',
-  // publicPath: '/demo-module-federation/',
+  publicPath: 'https://monako97.github.io/demo-module-federation/',
   fixBrowserRouter: {
     pathSegmentsToKeep: 1,
     path: '404.html',
