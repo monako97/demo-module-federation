@@ -64,6 +64,26 @@ const conf: Partial<ConfigType> = {
 export default conf;
 ```
 
-## 配置文档
+## 使用
 
-[click](https://monako97.github.io/neko-ui/@moneko/core)
+```jsx
+import React, { type FC } from 'react';
+import Card from 'demo_remote_lib/Card';
+import dayjs from 'dayjs';
+
+console.log(dayjs());
+const Root: FC = () => {
+  return (
+    <>
+      Root Page
+      <Card title={'csa'} />
+    </>
+  );
+};
+
+export default Root;
+```
+
+## 更多详细配置参考
+
+[click](https://monako97.github.io/neko-ui/@moneko/config)
