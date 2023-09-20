@@ -24,6 +24,7 @@ const conf: Partial<ConfigType> = {
         'react-dom/client',
         'react-router',
         'react-router-dom',
+        'neko-ui',
         {
           name: 'dayjs',
           path: './components/dayjs/index.ts',
