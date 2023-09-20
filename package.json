@@ -13,22 +13,22 @@
     "author": "@moneko/cli",
     "license": "MIT",
     "devDependencies": {
-        "@moneko/cli": "2.1.1",
-        "@moneko/core": "3.0.5",
+        "@moneko/cli": "2.1.2",
+        "@moneko/core": "3.1.0",
         "@moneko/postcss": "1.0.30",
         "@moneko/request": "1.0.2",
         "@types/react": "18.2.21",
         "@types/react-dom": "^18.2.7",
-        "eslint-config-neko": "2.0.1",
+        "eslint-config-neko": "2.0.2",
         "eslint-plugin-mdx": "2.2.0",
         "eslint-plugin-react": "7.33.2",
         "eslint-plugin-react-hooks": "4.6.0",
-        "n-code-live": "^1.0.6",
-        "neko-ui": "^2.3.7",
-        "stylelint-config-moneko": "1.0.16"
+        "n-code-live": "^1.0.7",
+        "neko-ui": "^2.4.4",
+        "stylelint-config-moneko": "1.0.18"
     },
     "dependencies": {
-        "@moneko/react": "1.0.3",
+        "@moneko/react": "1.0.4",
         "dayjs": "1.11.9",
         "react": "18.2.0",
         "react-dom": "18.2.0"
