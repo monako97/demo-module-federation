@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useRef } from 'react';
 import app from '@app/info';
 import routes, { type RouteConfig } from '@app/routes';
 import { Link, useLocation } from '@moneko/react';
-import { type ColorScheme, type DropdownElement, theme } from 'neko-ui';
+import { type ColorScheme, type DropdownElement, type MenuOption, theme } from 'neko-ui';
 import './sider.global.less';
 
 export type MyPkg = Partial<RouteConfig> & {
@@ -67,11 +67,11 @@ function Sider({ scheme }: { scheme?: keyof typeof ColorScheme }) {
     light: '🌞',
     auto: '⚙️',
   };
-  const themes = useMemo(
+  const themes = useMemo<MenuOption[]>(
     () => [
-      { label: '暗黑', value: 'dark', icon: icons.dark },
-      { label: '明亮', value: 'light', icon: icons.light },
-      { label: '跟随系统', value: 'auto', icon: icons.auto },
+      { label: '暗黑', value: 'dark', icon: <>{icons.dark}</> },
+      { label: '明亮', value: 'light', icon: <>{icons.light}</> },
+      { label: '跟随系统', value: 'auto', icon: <>{icons.auto}</> },
     ],
     [icons.auto, icons.dark, icons.light],
   );

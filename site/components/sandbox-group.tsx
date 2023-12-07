@@ -1,6 +1,5 @@
 import React, { FC, Suspense, lazy, useMemo } from 'react';
 import Fallback from '@app/fallback';
-import 'n-code-live';
 import Sandbox from './sandbox';
 import './sandbox-group.css';
 

@@ -48,7 +48,7 @@ const conf: Partial<ConfigType> = {
       remotes: [
         {
           // moduleFederation的名称
-          name: 'demo_remote_lib',
+          name: 'demo_module_federation',
           // moduleFederation 的地址
           host: 'https://monako97.github.io/demo-module-federation',
           // 从 moduleFederation 载入的依赖
@@ -79,7 +79,7 @@ import React, { type FC } from 'react';
 // 从 moduleFederation 加载的 dayjs
 import dayjs from 'dayjs';
 // 从 moduleFederation 加载的 Card
-import Card from 'demo_remote_lib/Card';
+import Card from 'demo_module_federation/Card';
 
 console.log(dayjs());
 const Root: FC = () => {

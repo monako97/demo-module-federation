@@ -1,13 +1,24 @@
-import type { ConfigType } from '@moneko/core';
+import { type ConfigType } from '@moneko/core';
 
+const baseUrl = 'https://cdn.statically.io/gh/monako97/cdn/main/npm';
 const conf: Partial<ConfigType> = {
   htmlPluginOption: {
     favicon: './site/assets/images/favicon.ico',
+    tags: [{ tag: 'script', src: `${baseUrl}/n-code-live/1.0.8/umd/index.js` }],
   },
-  basename: '/demo-module-federation',
-  publicPath: '/demo-module-federation',
   fallbackCompPath: '@/components/fallback',
   externals: [/(.+)\/__tests__\/(.+)/i],
+  rem: {
+    designSize: 1920,
+  },
+  seo: {
+    domain: 'monako97.github.io',
+    nojekyll: true,
+  },
+  fixBrowserRouter: {
+    pathSegmentsToKeep: 1,
+    path: '404.html',
+  },
   runtimeChunk: false,
   moduleFederation: [
     {

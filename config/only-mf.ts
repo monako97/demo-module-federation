@@ -1,8 +1,9 @@
-import path from 'path';
-import type { ConfigType } from '@moneko/core';
+import { type ConfigType, PACKAGENAME, resolveProgramPath } from '@moneko/core';
 
 const conf: Partial<ConfigType> = {
-  entry: path.join(process.cwd(), './components/index.ts'),
+  entry: resolveProgramPath('components/index.ts'),
+  basename: `/${PACKAGENAME}`,
+  publicPath: `https://monako97.github.io/${PACKAGENAME}/`,
 };
 
 export default conf;
