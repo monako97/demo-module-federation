@@ -1,4 +1,4 @@
-import React, { type ReactNode } from 'react';
+import React from 'react';
 
 /** API
  * @since 1.0.0
@@ -9,9 +9,9 @@ export interface CardProps {
    * @default 默认值
    * @since 1.1.0 <br />表示这个属性在 1.1.0 新增
    */
-  title?: ReactNode;
+  title?: React.ReactNode;
   /** 内容 */
-  children?: ReactNode;
+  children?: React.ReactNode;
 }
 
 function Card(props: CardProps) {

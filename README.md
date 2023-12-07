@@ -1,4 +1,4 @@
-# demo-remote-lib
+# demo-module-federation
 
 > 这里教你如何制作并发布一个moduleFederation应用, 使用组件库应用类型只是为了方便生成文档
 

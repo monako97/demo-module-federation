@@ -1,4 +1,4 @@
-import * as dayjs from 'dayjs';
+import dayjs from 'dayjs';
 import 'dayjs/locale/zh-cn';
 import localeData from 'dayjs/plugin/localeData';
 import relativeTime from 'dayjs/plugin/relativeTime';

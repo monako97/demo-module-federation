@@ -1,5 +1,5 @@
 {
-    "name": "demo-remote-lib",
+    "name": "demo-module-federation",
     "version": "1.0.0",
     "description": "制作并发布一个moduleFederation应用",
     "main": "lib/index.js",
@@ -13,23 +13,23 @@
     "author": "@moneko/cli",
     "license": "MIT",
     "devDependencies": {
-        "@moneko/cli": "2.1.2",
-        "@moneko/core": "3.1.0",
-        "@moneko/postcss": "1.0.30",
+        "@moneko/cli": "2.4.0",
+        "@moneko/core": "3.9.1",
+        "@moneko/postcss": "1.2.0",
         "@moneko/request": "1.0.2",
-        "@types/react": "18.2.21",
-        "@types/react-dom": "^18.2.7",
-        "eslint-config-neko": "2.0.2",
+        "@types/react": "18.2.42",
+        "@types/react-dom": "^18.2.17",
+        "eslint-config-neko": "2.2.0",
         "eslint-plugin-mdx": "2.2.0",
         "eslint-plugin-react": "7.33.2",
         "eslint-plugin-react-hooks": "4.6.0",
-        "n-code-live": "^1.0.7",
-        "stylelint-config-moneko": "1.0.18"
+        "n-code-live": "^1.0.8",
+        "stylelint-config-moneko": "1.2.1"
     },
     "dependencies": {
-        "@moneko/react": "1.0.4",
-        "neko-ui": "^2.4.4",
-        "dayjs": "1.11.9",
+        "@moneko/react": "1.2.0",
+        "neko-ui": "^2.6.4",
+        "dayjs": "1.11.10",
         "react": "18.2.0",
         "react-dom": "18.2.0"
     },

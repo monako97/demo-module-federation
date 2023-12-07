@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import docs from '@app/docs';
 import { Outlet, useLocation } from '@moneko/react';
-import { type ColorScheme, ProviderElement, theme } from 'neko-ui';
+import { type ColorScheme, type ProviderElement, theme } from 'neko-ui';
 import Colors from './components/colors';
 import Coverage from './components/coverage';
 import Footer from './components/footer';
@@ -17,7 +17,7 @@ function App() {
   const [scheme, setScheme] = useState(orgScheme());
   const location = useLocation();
   const active = useMemo(() => location.pathname.substring(1), [location.pathname]);
-  const doc = useMemo(() => docs[active], [active]);
+  const doc = useMemo(() => docs[active] || [], [active]);
 
   useEffect(() => {
     box.current?.scrollTo({ top: 0, behavior: 'smooth' });

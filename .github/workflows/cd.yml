@@ -37,7 +37,7 @@ jobs:
       - name: 'install'
         run: yarn
       - name: 'Build Github Pages'
-        run: yarn build config=github
+        run: yarn build no-lib no-es config=github
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:

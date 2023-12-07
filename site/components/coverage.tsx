@@ -1,6 +1,6 @@
 import React, { type FC, memo, useMemo } from 'react';
-import app from '@app';
 import coverage from '@app/coverage';
+import app from '@app/info';
 import { useLocation } from '@moneko/react';
 import './coverage.css';
 

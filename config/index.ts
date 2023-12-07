@@ -4,19 +4,15 @@ const conf: Partial<ConfigType> = {
   htmlPluginOption: {
     favicon: './site/assets/images/favicon.ico',
   },
+  basename: '/demo-module-federation',
+  publicPath: '/demo-module-federation',
   fallbackCompPath: '@/components/fallback',
   externals: [/(.+)\/__tests__\/(.+)/i],
-  minifier: {
-    css: {
-      type: 'cssnano',
-    },
-  },
-  publicPath: 'auto',
   runtimeChunk: false,
   moduleFederation: [
     {
-      name: 'demo_remote_lib',
-      library: { type: 'var', name: 'demo_remote_lib' },
+      name: 'demo_module_federation',
+      library: { type: 'var', name: 'demo_module_federation' },
       exposes: [
         'react',
         'react/jsx-runtime',
