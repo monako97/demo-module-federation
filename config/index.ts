@@ -8,17 +8,6 @@ const conf: Partial<ConfigType> = {
   },
   fallbackCompPath: '@/components/fallback',
   externals: [/(.+)\/__tests__\/(.+)/i],
-  rem: {
-    designSize: 1920,
-  },
-  seo: {
-    domain: 'monako97.github.io',
-    nojekyll: true,
-  },
-  fixBrowserRouter: {
-    pathSegmentsToKeep: 1,
-    path: '404.html',
-  },
   runtimeChunk: false,
   moduleFederation: [
     {
