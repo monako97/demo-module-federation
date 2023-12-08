@@ -14,7 +14,7 @@
     "license": "MIT",
     "devDependencies": {
         "@moneko/cli": "2.6.0",
-        "@moneko/core": "3.9.7",
+        "@moneko/core": "3.9.9",
         "@moneko/request": "1.0.2",
         "@types/react": "18.2.42",
         "@types/react-dom": "^18.2.17",
