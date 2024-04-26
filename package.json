@@ -7,7 +7,7 @@
         "start": "mo start library react",
         "build": "mo build library react",
         "stylelint": "mo stylelint components && mo stylelint site",
-        "eslint": "mo eslint {components,site}",
+        "eslint": "mo eslint components && mo eslint site",
         "changelog": "mo changelog CHANGELOG.md && git add CHANGELOG.md",
         "lint": "npm run eslint && npm run stylelint"
     },
