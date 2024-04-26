@@ -8,7 +8,8 @@
         "build": "mo build library react",
         "stylelint": "mo stylelint components && mo stylelint site",
         "eslint": "mo eslint {components,site}",
-        "changelog": "mo changelog CHANGELOG.md && git add CHANGELOG.md"
+        "changelog": "mo changelog CHANGELOG.md && git add CHANGELOG.md",
+        "lint": "npm run eslint && npm run stylelint"
     },
     "author": "@moneko/cli",
     "license": "MIT",
