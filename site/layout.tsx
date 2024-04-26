@@ -57,7 +57,7 @@ function App() {
           {!active && (
             <>
               <Colors />
-              <n-md text={`[TOC]\n${log}`} />
+              {log ? <n-md text={`[TOC]\n${log}`} /> : null}
             </>
           )}
         </div>

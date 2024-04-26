@@ -21,13 +21,13 @@ const obj: Record<string, MyPkg[]> = {},
 let all: MyPkg[] = [];
 
 function extractMenu(list: RouteConfig[]) {
-  return list.forEach(({ key, meta, children }) => {
-    if (meta) {
-      const type = meta.type || '默认',
+  return list.forEach(({ key, metadata, children }) => {
+    if (metadata) {
+      const type = metadata.type || '默认',
         prev = obj[type as string] || [];
 
       obj[type as string] = prev.concat({
-        ...meta,
+        ...metadata,
         type: type as string,
         key,
       });
@@ -36,7 +36,7 @@ function extractMenu(list: RouteConfig[]) {
       }
       if (key) {
         kv[key] = {
-          ...meta,
+          ...metadata,
           type: type as string,
           key,
         };
@@ -69,9 +69,9 @@ function Sider({ scheme }: { scheme?: keyof typeof ColorScheme }) {
   };
   const themes = useMemo<MenuOption[]>(
     () => [
-      { label: '暗黑', value: 'dark', icon: <>{icons.dark}</> },
-      { label: '明亮', value: 'light', icon: <>{icons.light}</> },
-      { label: '跟随系统', value: 'auto', icon: <>{icons.auto}</> },
+      { label: '暗黑', value: 'dark', icon: <i>{icons.dark}</i> },
+      { label: '明亮', value: 'light', icon: <i>{icons.light}</i> },
+      { label: '跟随系统', value: 'auto', icon: <i>{icons.auto}</i> },
     ],
     [icons.auto, icons.dark, icons.light],
   );
