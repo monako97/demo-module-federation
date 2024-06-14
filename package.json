@@ -1,42 +1,52 @@
 {
-    "name": "demo-module-federation",
-    "version": "1.0.0",
-    "description": "制作并发布一个moduleFederation应用",
-    "main": "lib/index.js",
-    "scripts": {
-        "start": "mo start library react",
-        "build": "mo build library react",
-        "stylelint": "mo stylelint components && mo stylelint site",
-        "eslint": "mo eslint components && mo eslint site",
-        "changelog": "mo changelog CHANGELOG.md && git add CHANGELOG.md",
-        "lint": "npm run eslint && npm run stylelint"
+  "name": "demo-module-federation",
+  "version": "1.0.0",
+  "description": "制作并发布一个moduleFederation应用",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "types/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./lib/index.js",
+      "import": "./es/index.js"
     },
-    "author": "@moneko/cli",
-    "license": "MIT",
-    "devDependencies": {
-        "@moneko/react": "1.4.5",
-        "@moneko/cli": "2.9.4",
-        "@moneko/core": "3.14.0",
-        "@moneko/request": "1.0.2",
-        "@types/react": "18.3.0",
-        "@types/react-dom": "^18.3.0",
-        "eslint-config-neko": "2.7.1",
-        "eslint-plugin-mdx": "3.1.5",
-        "eslint-plugin-react": "7.34.1",
-        "eslint-plugin-react-hooks": "4.6.1",
-        "n-code-live": "^1.1.0",
-        "neko-ui": "^2.7.3",
-        "stylelint-config-moneko": "2.3.2"
-    },
-    "dependencies": {
-        "dayjs": "1.11.10",
-        "react": "18.3.0",
-        "react-dom": "18.3.0"
-    },
-    "files": [
-        "LICENSE",
-        "README.md",
-        "es",
-        "lib"
+    "./*": [
+      "./*"
     ]
+  },
+  "scripts": {
+    "start": "mo start library react",
+    "build": "mo build library react",
+    "stylelint": "mo stylelint components && mo stylelint site",
+    "eslint": "mo eslint components && mo eslint site",
+    "changelog": "mo changelog CHANGELOG.md && git add CHANGELOG.md",
+    "lint": "npm run eslint && npm run stylelint"
+  },
+  "author": "@moneko/cli",
+  "license": "MIT",
+  "devDependencies": {
+    "@moneko/react": "1.4.8",
+    "@moneko/cli": "2.13.7",
+    "@moneko/core": "3.17.30",
+    "@moneko/request": "1.0.2",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "eslint-config-neko": "2.7.6",
+    "eslint-plugin-react": "7.34.2",
+    "eslint-plugin-react-hooks": "4.6.2",
+    "n-code-live": "^1.1.0",
+    "neko-ui": "^2.8.15",
+    "stylelint-config-moneko": "2.4.0"
+  },
+  "dependencies": {
+    "dayjs": "1.11.11",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "es",
+    "lib"
+  ]
 }

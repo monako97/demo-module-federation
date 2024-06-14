@@ -1,6 +1,6 @@
-import React from 'react';
-import app from '@app/info';
 import './footer.css';
+import React, { memo } from 'react';
+import app from '@app/info';
 
 const year = new Date().getFullYear();
 
@@ -30,4 +30,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default memo(Footer, () => true);

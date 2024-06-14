@@ -13,4 +13,6 @@ rules:
       - ^@/
       - ^@app
       - ^@pkg
+      - ^@moneko/css
+      - ^@moneko/common
       - ^demo-module-federation
