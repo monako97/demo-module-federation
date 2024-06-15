@@ -25,9 +25,9 @@
   "author": "@moneko/cli",
   "license": "MIT",
   "devDependencies": {
-    "@moneko/react": "1.4.8",
-    "@moneko/cli": "2.13.7",
-    "@moneko/core": "3.17.33",
+    "@moneko/react": "1.5.1",
+    "@moneko/cli": "2.14.2",
+    "@moneko/core": "3.17.35",
     "@moneko/request": "1.0.2",
     "@types/react": "18.3.3",
     "@types/react-dom": "^18.3.0",
@@ -35,7 +35,7 @@
     "eslint-plugin-react": "7.34.2",
     "eslint-plugin-react-hooks": "4.6.2",
     "n-code-live": "^1.1.0",
-    "neko-ui": "^2.8.15",
+    "neko-ui": "^2.8.16",
     "stylelint-config-moneko": "2.4.0"
   },
   "dependencies": {
@@ -48,5 +48,10 @@
     "README.md",
     "es",
     "lib"
+  ],
+  "browserslist": [
+    ">0.3%, defaults",
+    "fully supports es6-module",
+    "maintained node versions"
   ]
 }

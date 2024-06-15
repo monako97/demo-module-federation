@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 /** API
  * @since 1.0.0

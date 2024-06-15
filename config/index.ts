@@ -2,11 +2,10 @@ import { type ConfigType } from '@moneko/core';
 
 const conf: Partial<ConfigType> = {
   htmlPluginOption: {
-    favicon: './site/assets/images/favicon.ico',
     tags: [
       {
         tag: 'script',
-        src: 'https://cdn.statically.io/gh/monako97/cdn/main/npm/%40webcomponents/webcomponentsjs/2.8.0/webcomponents-loader.js',
+        src: 'https://cdn.statically.io/gh/monako97/cdn/main/npm/n-code-live/1.1.0/umd/index.js',
       },
     ],
   },

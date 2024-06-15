@@ -1,11 +1,11 @@
 import './sandbox.css';
 import * as React from 'react';
 import { type ExampleModule } from '@app/example';
-import CodeLive, { type CodeLiveElement } from 'n-code-live';
+import { type BaseOption, type CodeElement, type SegmentedElement } from 'neko-ui';
 import { jsx } from 'react/jsx-runtime';
 import { createRoot } from 'react-dom/client';
 import * as Pkgs from '@pkg/index';
-import type { BaseOption, CodeElement, SegmentedElement } from 'neko-ui';
+import type { CodeLiveElement } from 'n-code-live';
 
 const { useEffect, useMemo, useState, useRef } = React;
 
@@ -18,11 +18,10 @@ interface SandboxProps extends Omit<ExampleModule, 'title'> {
 
 const scope = {
   React,
-  CodeLive,
   jsx,
-  ...React,
   ...Pkgs,
 };
+
 const Sandbox: React.FC<SandboxProps> = ({ codes = {}, description, legend, style }) => {
   const langsRef = useRef<SegmentedElement>(null);
   const live = useRef<CodeLiveElement>(null);
@@ -77,9 +76,10 @@ const Sandbox: React.FC<SandboxProps> = ({ codes = {}, description, legend, styl
         jsxFragmentPragma: 'React.Fragment',
       };
       live.current.renderJsx = (dom, el) => {
+        const Dom = dom as unknown as React.FC;
         const root = createRoot(el);
 
-        root.render(typeof dom === 'function' ? (dom() as React.ReactNode) : dom);
+        root.render(typeof Dom === 'function' ? <Dom /> : Dom);
         return () => {
           try {
             root.unmount();
@@ -102,6 +102,7 @@ const Sandbox: React.FC<SandboxProps> = ({ codes = {}, description, legend, styl
   }, [codes, langs]);
   useEffect(() => {
     if (live.current) {
+      live.current.jsx = current.jsx;
       live.current.source = sources[current.lang];
     }
   }, [current, sources]);
@@ -130,7 +131,7 @@ const Sandbox: React.FC<SandboxProps> = ({ codes = {}, description, legend, styl
       <fieldset className="sandbox-container">
         <legend className="sandbox-title">{legend}</legend>
         <section className="sandbox-view">
-          <n-code-live ref={live} jsx={current.jsx} />
+          <n-code-live ref={live} />
           {langs.length > 1 ? (
             <n-segmented ref={langsRef} class="lang-btn" value={current.lang} />
           ) : null}
@@ -165,7 +166,7 @@ const Sandbox: React.FC<SandboxProps> = ({ codes = {}, description, legend, styl
             ref={codeRef}
             class={['sandbox-live-editor', !open && 'hide'].filter(Boolean).join(' ')}
             code={sources[current.lang]}
-            lang={current.lang}
+            language={current.lang}
             edit
             css={`
               .n-editor,
