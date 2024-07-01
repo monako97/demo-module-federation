@@ -33,18 +33,18 @@
     "url": "https://github.com/monako97/demo-module-federation"
   },
   "devDependencies": {
-    "@moneko/react": "1.5.1",
+    "@moneko/react": "1.5.2",
     "@moneko/cli": "2.14.2",
-    "@moneko/core": "3.17.40",
+    "@moneko/core": "3.19.2",
     "@moneko/request": "1.0.2",
     "@types/react": "18.3.3",
     "@types/react-dom": "^18.3.0",
-    "eslint-config-neko": "2.7.6",
-    "eslint-plugin-react": "7.34.2",
+    "eslint-config-neko": "2.8.4",
+    "eslint-plugin-react": "7.34.3",
     "eslint-plugin-react-hooks": "4.6.2",
     "n-code-live": "^1.1.0",
-    "neko-ui": "^2.8.17",
-    "stylelint-config-moneko": "2.4.0"
+    "neko-ui": "^2.8.19",
+    "stylelint-config-moneko": "2.4.1"
   },
   "dependencies": {
     "dayjs": "1.11.11",
