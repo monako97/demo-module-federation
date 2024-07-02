@@ -11,6 +11,7 @@ const conf: Partial<ConfigType> = {
     ],
   },
   fallbackCompPath: '@/components/fallback',
+  runtimeChunk: false,
   moduleFederation: [
     {
       name: 'demo_module_federation',
