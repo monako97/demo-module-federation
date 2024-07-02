@@ -1,6 +1,7 @@
 import './global.css';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import docs from '@app/docs';
+// import a from '@app/test';
 import { Outlet, useLocation } from '@moneko/react';
 import { type ColorScheme, type ProviderElement, mdStyle, theme } from 'neko-ui';
 import Colors from './components/colors';
@@ -10,6 +11,7 @@ import SandboxGroup from './components/sandbox-group';
 import Sider from './components/sider';
 import ChangeLog from '../CHANGELOG.md';
 
+// console.log(a);
 function App() {
   const provider = useRef<ProviderElement>(null);
   const box = useRef<HTMLDivElement>(null);

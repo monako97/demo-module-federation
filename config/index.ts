@@ -1,6 +1,7 @@
 import { type ConfigType } from '@moneko/core';
 
 const conf: Partial<ConfigType> = {
+  publicPath: 'auto',
   htmlPluginOption: {
     tags: [
       {
@@ -10,7 +11,6 @@ const conf: Partial<ConfigType> = {
     ],
   },
   fallbackCompPath: '@/components/fallback',
-  runtimeChunk: false,
   moduleFederation: [
     {
       name: 'demo_module_federation',
