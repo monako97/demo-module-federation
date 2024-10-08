@@ -1,11 +1,12 @@
-import './sandbox.css';
 import * as React from 'react';
-import { type ExampleModule } from '@app/example';
-import { type BaseOption, type CodeElement, type SegmentedElement } from 'neko-ui';
 import { jsx } from 'react/jsx-runtime';
 import { createRoot } from 'react-dom/client';
+import { type ExampleModule } from '@app/example';
 import * as Pkgs from '@pkg/index';
 import type { CodeLiveElement } from 'n-code-live';
+import { type BaseOption, type CodeElement, type SegmentedElement } from 'neko-ui';
+
+import './sandbox.css';
 
 const { useEffect, useMemo, useState, useRef } = React;
 

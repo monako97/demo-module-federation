@@ -1,6 +1,8 @@
-import './colors.global.less';
 import React from 'react';
+
 import readme from '../../README.md?raw';
+
+import './colors.global.less';
 
 function Colors() {
   const colors = ['primary', 'warning', 'error', 'success'],

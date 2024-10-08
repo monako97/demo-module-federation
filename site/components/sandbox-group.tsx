@@ -1,9 +1,11 @@
-import './sandbox-group.css';
-import React, { FC, Suspense, lazy, useMemo } from 'react';
+import React, { FC, lazy, Suspense, useMemo } from 'react';
 import examples from '@app/example';
 import Fallback from '@app/fallback';
 import { isFunction } from '@moneko/common';
+
 import Sandbox from './sandbox';
+
+import './sandbox-group.css';
 
 interface SandboxGroupProps {
   name: string;

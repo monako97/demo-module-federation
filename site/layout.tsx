@@ -1,15 +1,17 @@
-import './global.css';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import docs from '@app/docs';
-// import a from '@app/test';
 import { Outlet, useLocation } from '@moneko/react';
-import { type ColorScheme, type ProviderElement, mdStyle, theme } from 'neko-ui';
+import { type ColorScheme, mdStyle, type ProviderElement, theme } from 'neko-ui';
+
+import ChangeLog from '../CHANGELOG.md';
+
 import Colors from './components/colors';
 import Coverage from './components/coverage';
 import Footer from './components/footer';
 import SandboxGroup from './components/sandbox-group';
 import Sider from './components/sider';
-import ChangeLog from '../CHANGELOG.md';
+
+import './global.css';
 
 // console.log(a);
 function App() {

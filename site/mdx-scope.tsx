@@ -2,8 +2,8 @@ import React, { useMemo } from 'react';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
 import { css } from '@moneko/css';
-import { type TabOption, theme } from 'neko-ui';
 import type { MDXComponents } from '@moneko/react/mdx';
+import { type TabOption, theme } from 'neko-ui';
 
 type Props = {
   children: React.ReactElement;
