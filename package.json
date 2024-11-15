@@ -35,7 +35,7 @@
   "devDependencies": {
     "@moneko/react": "1.6.13",
     "@moneko/cli": "2.17.0",
-    "@moneko/core": "3.24.7",
+    "@moneko/core": "3.24.9",
     "@moneko/request": "1.0.5",
     "@types/react": "18.3.12",
     "@types/react-dom": "^18.3.1",
