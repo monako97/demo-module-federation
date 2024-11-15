@@ -6,7 +6,7 @@ const conf: Partial<ConfigType> = {
     tags: [
       {
         tag: 'script',
-        src: 'https://cdn.statically.io/gh/monako97/cdn/main/npm/n-code-live/1.1.0/umd/index.js',
+        src: 'https://cdn.statically.io/gh/monako97/cdn/main/npm/n-code-live/1.3.1/umd/index.js',
       },
     ],
   },
