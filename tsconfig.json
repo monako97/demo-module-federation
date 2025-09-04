@@ -12,6 +12,10 @@
             "demo-module-federation/*": [
                 "components/*"
             ]
-        }
+        },
+        "typeRoots": [
+            "./typings",
+            "./node_modules/@types"
+        ]
     }
 }

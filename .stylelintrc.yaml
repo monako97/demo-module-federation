@@ -1,2 +1,5 @@
 extends:
-  - stylelint-config-moneko
+  - "@moneko/core/stylelint/config"
+
+ignoreFiles: 
+  - site/assets/images/favicon.ico

@@ -10,5 +10,21 @@ dayjs.extend(localeData);
 dayjs.extend(relativeTime);
 dayjs.locale('zh-cn');
 
-export * from 'dayjs';
+export {
+  type ConfigType,
+  type FormatObject,
+  type OptionType,
+  type UnitTypeShort,
+  type UnitTypeLong,
+  type UnitTypeLongPlural,
+  type UnitType,
+  type OpUnitType,
+  type QUnitType,
+  type ManipulateType,
+  type PluginFunc,
+  extend,
+  locale,
+  isDayjs,
+  unix,
+} from 'dayjs';
 export default dayjs;

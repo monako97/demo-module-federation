@@ -15,6 +15,7 @@
     ]
   },
   "scripts": {
+    "pin": "mo pin",
     "start": "mo start library react",
     "build": "mo build library react",
     "stylelint": "mo stylelint components && mo stylelint site",
@@ -33,23 +34,18 @@
     "url": "https://github.com/monako97/demo-module-federation"
   },
   "devDependencies": {
-    "@moneko/react": "1.6.13",
-    "@moneko/cli": "2.17.0",
-    "@moneko/core": "3.24.9",
-    "@moneko/request": "1.0.5",
-    "@types/react": "18.3.12",
-    "@types/react-dom": "^18.3.1",
-    "eslint-config-neko": "3.0.0",
-    "eslint-plugin-react": "7.37.2",
-    "eslint-plugin-react-hooks": "5.0.0",
-    "n-code-live": "^1.3.1",
-    "neko-ui": "^2.8.25",
-    "stylelint-config-moneko": "2.4.2"
+    "@moneko/react": "2.0.14",
+    "@moneko/core": "3.52.1",
+    "@moneko/request": "1.6.2",
+    "@types/react": "19.1.12",
+    "@types/react-dom": "19.1.9",
+    "n-code-live": "2.1.1",
+    "neko-ui": "2.13.7"
   },
   "dependencies": {
-    "dayjs": "1.11.13",
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "dayjs": "1.11.18",
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
   },
   "files": [
     "LICENSE",

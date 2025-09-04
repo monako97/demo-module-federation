@@ -1,6 +1,9 @@
 import { type ConfigType } from '@moneko/core';
 
 const conf: Partial<ConfigType> = {
+  output: {
+    crossOriginLoading: false,
+  },
   publicPath: 'auto',
   htmlPluginOption: {
     tags: [
