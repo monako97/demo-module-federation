@@ -12,19 +12,19 @@ dayjs.locale('zh-cn');
 
 export {
   type ConfigType,
+  extend,
   type FormatObject,
+  isDayjs,
+  locale,
+  type ManipulateType,
   type OptionType,
-  type UnitTypeShort,
+  type OpUnitType,
+  type PluginFunc,
+  type QUnitType,
+  type UnitType,
   type UnitTypeLong,
   type UnitTypeLongPlural,
-  type UnitType,
-  type OpUnitType,
-  type QUnitType,
-  type ManipulateType,
-  type PluginFunc,
-  extend,
-  locale,
-  isDayjs,
+  type UnitTypeShort,
   unix,
 } from 'dayjs';
 export default dayjs;
